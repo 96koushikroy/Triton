@@ -7,6 +7,7 @@ Router.route('/', function () {
     this.render('home');
 });
 
+
 Router.route('/info/:id', function () {
     this.render('info');
 });
@@ -24,4 +25,8 @@ Router.route('logout',function () {
         sAlert.error('User successfully logged out!');
         Router.go('/');
     });
+});
+
+Router.route('/addjob', function () {
+    this.render('addjob');
 });
