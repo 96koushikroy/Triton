@@ -51,8 +51,21 @@ Router.route('add-job', function () {
     }
 });
 
+
 Router.route('search-jobs', function () {
     this.render('search'),{
         path:'/search'
     }
 });
+
+<<<<<<< HEAD
+=======
+Router.route('jobs-detail/:id', function() {
+    this.render('jobDetail', {
+        data: function() {
+            // H4Tx4EWFEeMBqavqt
+            return jobs.findOne({_id: this.params.id});
+        }
+    })
+})
+>>>>>>> 2057a20a7c8333453f534b66792ed7450da10f4f

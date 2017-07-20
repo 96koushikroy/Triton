@@ -11,7 +11,7 @@ Template.profile.onCreated(function() {
 
 Template.profile.helpers({
     'data': function () {
-        return Meteor.users.findOne();
+        return Meteor.users.findOne({_id: Meteor.userId()});
     }
 });
 
