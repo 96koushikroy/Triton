@@ -3,25 +3,31 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import { Mongo } from 'meteor/mongo';
 
 
-Router.route('/', function () {
+Router.route('homepage', function () {
     this.render('home'), {
-        name: 'post'
+        path: '/'
     }
 });
 
-Router.route('login',function () {
-    this.render('login');
+Router.route('sign-in',function () {
+    this.render('login'),{
+        name:'/login'
+    }
 });
 
-Router.route('register',function(){
-    this.render('register');
+Router.route('sign-up',function(){
+    this.render('register'),{
+        path:'/register'
+    }
 });
 
-Router.route('profile', function() {
-    this.render('profile');
+Router.route('my-profie', function() {
+    this.render('profile'),{
+        path:'/profile'
+    }
 })
 
-Router.route('profile/:id', function() {
+Router.route('my-profile/:id', function() {
     this.render('profilePublic', {
         data: function() {
             // vN4BrDPMcFNFckBuC
@@ -30,17 +36,23 @@ Router.route('profile/:id', function() {
     });
 })
 
-Router.route('logout',function () {
+Router.route('logo',function () {
     Meteor.logout(function() {
         sAlert.error('User successfully logged out!');
-        Router.go('/');
     });
+    this.render('home'),{
+        path:'/logout'
+    }
 });
 
-Router.route('/addjob', function () {
-    this.render('addjob');
+Router.route('add-job', function () {
+    this.render('addjob'),{
+        path:'/addjob'
+    }
 });
 
-Router.route('/search', function () {
-    this.render('search');
+Router.route('search-jobs', function () {
+    this.render('search'),{
+        path:'/search'
+    }
 });
