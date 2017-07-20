@@ -1,5 +1,12 @@
 import { Meteor } from 'meteor/meteor';
 
+
+info = new Mongo.Collection('info');
+
+
 Meteor.startup(() => {
-  // code to run on server at startup
+
+
+
+
 });
