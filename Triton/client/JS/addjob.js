@@ -22,7 +22,7 @@ Template.addjob.events({
         jobdescription = event.target.jobdescription.value;
 
         var data = {
-            jobname:jobname,joblocation:joblocation,jobarea:jobarea,deliveryaddress:deliveryaddress,deliveryarea:deliveryarea,wage:wage,jobdescription:jobdescription,createdAt:new Date()
+            jobname:jobname,joblocation:joblocation,jobarea:jobarea,deliveryaddress:deliveryaddress,deliveryarea:deliveryarea,wage:wage,jobdescription:jobdescription,remaining:new Date(),createdAt:new Date()
         };
         jobs.insert(data);
         sAlert.error('data added');
