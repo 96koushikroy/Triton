@@ -65,8 +65,4 @@ Router.route('jobs-detail/:id', function() {
             return jobs.findOne({_id: this.params.id});
         }
     })
-<<<<<<< HEAD
 });
-=======
-})
->>>>>>> 8ec518d18167cf44e2849e65b5eb89298dc9d624
