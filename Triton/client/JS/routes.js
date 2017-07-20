@@ -4,7 +4,9 @@ import { Mongo } from 'meteor/mongo';
 
 
 Router.route('/', function () {
-    this.render('home');
+    this.render('home'), {
+        name: 'post'
+    }
 });
 
 Router.route('/info/:id', function () {
