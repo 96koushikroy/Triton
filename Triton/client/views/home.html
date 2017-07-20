@@ -1,0 +1,20 @@
+<template name="home">
+    <div class="container">
+        <br><br><br><br><br>
+        <div class="row center-block">
+            <div class="col-md-12">
+                {{#if currentUser}}<a type="button" href="{{pathFor 'logout'}}" class="btn btn-default center-block">Logout</a>{{/if}}
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <a type="button" href="{{pathFor 'login'}}" class="btn btn-default btn-lg center-block">Login</a>
+            </div>
+            <div class="col-md-6">
+
+                <a type="button" href="{{pathFor 'register'}}" class="center-block btn btn-default btn-lg">Register</a>
+            </div>
+        </div>
+    </div>
+</template>
