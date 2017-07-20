@@ -1,0 +1,37 @@
+<template name="profile">
+    {{#if currentUser}}
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">My Profile</h2>
+                <div class="col-md-6 col-md-offset-3" id="infoDiv">
+                    <form id="editprofile">
+                        <input type="hidden" name="sid" value="{{data._id}}">
+                        Name:    <input type="text" name="uname" class="form-control form-profile" value="{{data.profile.name}}" readonly={this.readBool}><br />
+                        Phone: <input type="text" name="phone" class="form-control form-profile" value="{{data.profile.phone}}" readonly><br />
+                        Address: <input type="text" name="address" class="form-control form-profile" value="{{data.profile.address}}" readonly><br />
+                        Email: <input type="text" name="email" class="form-control form-profile" value="{{data.emails.[0].address}}" readonly><br />
+                        <input type="submit" class="btn btn-primary" id="submitButton" value="Edit Profile">
+                        <input type="submit" class="btn btn-success" id="getPassword" value="Edit Password">
+                    </form>
+                </div>
+                <div class="col-md-6 col-md-offset-3" id="passwordDiv" style="display:none;">
+                    <h4 class="text-center">Ammend Password</h4>
+                    <form id="change-password">
+                        <label for="current-password">Current Password</label>
+                        <input type="password" class="form-control" name="cp" id="current-password" placeholder="Current Password">
+
+                        <label for="new-password">New Password</label>
+                        <input type="password" class="form-control" name="np" id="new-password" placeholder="New Password">
+
+                        <label for="new-password-repeated">Repeat New Password</label>
+                        <input type="password" class="form-control" name="npr" id="new-password-repeated" placeholder="Repeat New Password">
+                        <br />
+                        <input type="submit" class="btn btn-danger" value="Update Password">
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{else}}
+        {{>login}}
+    {{/if}}
+</template>
