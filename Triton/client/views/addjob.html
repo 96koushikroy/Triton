@@ -1,0 +1,155 @@
+<template name="addjob">
+
+    <div class="container">
+
+        <div id="addjobbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-default" >
+                <div class="panel-heading">
+                    <div class="panel-title">Add Jobs Here</div>
+                </div>
+
+                <div style="padding-top:30px" class="panel-body" >
+                    <form id="addjob" class="form-horizontal" role="form">
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" value="" placeholder="Job Name" name="jobname">
+                        </div>
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" value="" placeholder="Job Location" name="joblocation">
+                        </div>
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="jobarea" class="form-control selectpicker" >
+                                <option value=" " >Job area</option>
+                                <option>Bailey Road</option>
+                                <option>Banani</option>
+                                <option>Banani DOHS</option>
+                                <option>Baridhara</option>
+                                <option>Baridhara DOHS</option>
+                                <option>Bashudhara</option>
+                                <option>Dhanmondi</option>
+                                <option>Elephant Road</option>
+                                <option>Eskaton</option>
+                                <option>Green Road</option>
+                                <option>Gulshan 1</option>
+                                <option>Gulshan 2</option>
+                                <option>Hatirpul Residential Area</option>
+                                <option>Indira road</option>
+                                <option>Kakrail</option>
+                                <option>Lalmatia</option>
+                                <option>Maghbazar</option>
+                                <option>Mirpur DOHS</option>
+                                <option>Mirpur 10</option>
+                                <option>Mirpur 11</option>
+                                <option>Mirpur 12</option>
+                                <option>Mirpur 2</option>
+                                <option>Mirpur 6</option>
+                                <option>Mirpur 7</option>
+                                <option>Mirpur-Pallabi</option>
+                                <option>Mohakhali</option>
+                                <option>Mohakhali DOHS</option>
+                                <option>Mohammadpur</option>
+                                <option>Niketan</option>
+                                <option>Panthapath</option>
+                                <option>Paribagh</option>
+                                <option>Segunbagicha</option>
+                                <option>Shantinagar</option>
+                                <option>Shyamoli</option>
+                                <option>Siddheshwari</option>
+                                <option>Uttara</option>
+
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="text" name="deliveryaddress" class="form-control" placeholder="Delivery Address">
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="deliveryarea" class="form-control selectpicker" >
+                                <option value=" " >Delivery area</option>
+                                <option>Bailey Road</option>
+                                <option>Banani</option>
+                                <option>Banani DOHS</option>
+                                <option>Baridhara</option>
+                                <option>Baridhara DOHS</option>
+                                <option>Bashudhara</option>
+                                <option>Dhanmondi</option>
+                                <option>Elephant Road</option>
+                                <option>Eskaton</option>
+                                <option>Green Road</option>
+                                <option>Gulshan 1</option>
+                                <option>Gulshan 2</option>
+                                <option>Hatirpul Residential Area</option>
+                                <option>Indira road</option>
+                                <option>Kakrail</option>
+                                <option>Lalmatia</option>
+                                <option>Maghbazar</option>
+                                <option>Mirpur DOHS</option>
+                                <option>Mirpur 10</option>
+                                <option>Mirpur 11</option>
+                                <option>Mirpur 12</option>
+                                <option>Mirpur 2</option>
+                                <option>Mirpur 6</option>
+                                <option>Mirpur 7</option>
+                                <option>Mirpur-Pallabi</option>
+                                <option>Mohakhali</option>
+                                <option>Mohakhali DOHS</option>
+                                <option>Mohammadpur</option>
+                                <option>Niketan</option>
+                                <option>Panthapath</option>
+                                <option>Paribagh</option>
+                                <option>Segunbagicha</option>
+                                <option>Shantinagar</option>
+                                <option>Shyamoli</option>
+                                <option>Siddheshwari</option>
+                                <option>Uttara</option>
+                            </select>
+                        </div>
+
+
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="number" class="form-control" value="" placeholder="Offering Wage (in Taka)" name="wage">
+                        </div>
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <textarea name="jobdescription" class="form-control" placeholder="Job Description (within 250 words)"></textarea>
+
+                        </div>
+
+
+
+
+
+                        <div style="margin-top:10px" class="form-group">
+                            <!-- Button -->
+
+                            <div class="col-sm-12 controls">
+                                <input type="submit" class="btn btn-success" value="Post Job">
+
+                            </div>
+                        </div>
+
+
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</template>

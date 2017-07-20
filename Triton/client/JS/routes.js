@@ -9,10 +9,6 @@ Router.route('/', function () {
     }
 });
 
-Router.route('/info/:id', function () {
-    this.render('info');
-});
-
 Router.route('login',function () {
     this.render('login');
 });
@@ -21,9 +17,26 @@ Router.route('register',function(){
     this.render('register');
 });
 
+Router.route('profile', function() {
+    this.render('profile');
+})
+
+Router.route('profile/:id', function() {
+    this.render('profilePublic', {
+        data: function() {
+            // vN4BrDPMcFNFckBuC
+            return Meteor.users.findOne({_id: this.params.id});
+        }
+    });
+})
+
 Router.route('logout',function () {
     Meteor.logout(function() {
         sAlert.error('User successfully logged out!');
         Router.go('/');
     });
+});
+
+Router.route('/addjob', function () {
+    this.render('addjob');
 });
