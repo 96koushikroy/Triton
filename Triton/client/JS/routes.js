@@ -20,6 +20,10 @@ Router.route('register',function(){
     this.render('register');
 });
 
+Router.route('profile', function() {
+    this.render('profile');
+})
+
 Router.route('logout',function () {
     Meteor.logout(function() {
         sAlert.error('User successfully logged out!');
