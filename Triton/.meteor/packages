@@ -26,4 +26,10 @@ accounts-password
 accounts-base
 juliancwirko:s-alert
 fortawesome:fontawesome
+<<<<<<< HEAD
+maxharris9:meteor-bootstrap-slider
+jquery
+kidovate:bootstrap-slider
+=======
 tsega:bootstrap3-datetimepicker
+>>>>>>> 2057a20a7c8333453f534b66792ed7450da10f4f

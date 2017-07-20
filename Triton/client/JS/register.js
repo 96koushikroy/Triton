@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Mongo } from 'meteor/mongo';
-
+import { Accounts } from 'meteor/accounts-base';
 
 Template.register.helpers({
 
@@ -28,14 +28,8 @@ Template.register.events({
             password: password
         };
 
-        if(Meteor.users.findOne({email:email}).count() > 0){
-            sAlert.error('User Exists!');
-        }
-        else{
-            Accounts.createUser(final);
-            sAlert.success('Successfully registered!');
-        }
-
+        Accounts.createUser(final);
+        sAlert.success('Successfully registered!');
         Router.go('/');
     }
 });
