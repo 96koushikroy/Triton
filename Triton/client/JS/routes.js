@@ -41,6 +41,6 @@ Router.route('/addjob', function () {
     this.render('addjob');
 });
 
-Router.route('/search', function () {
-    this.render('search');
+Router.route('/findjob', function () {
+    this.render('findjob');
 });
