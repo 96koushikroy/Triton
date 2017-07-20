@@ -34,7 +34,7 @@ Router.route('my-profile/:id', function() {
             return Meteor.users.findOne({_id: this.params.id});
         }
     });
-})
+});
 
 Router.route('logo',function () {
     Meteor.logout(function() {
@@ -58,8 +58,6 @@ Router.route('search-jobs', function () {
     }
 });
 
-<<<<<<< HEAD
-=======
 Router.route('jobs-detail/:id', function() {
     this.render('jobDetail', {
         data: function() {
@@ -67,5 +65,4 @@ Router.route('jobs-detail/:id', function() {
             return jobs.findOne({_id: this.params.id});
         }
     })
-})
->>>>>>> 2057a20a7c8333453f534b66792ed7450da10f4f
+});
