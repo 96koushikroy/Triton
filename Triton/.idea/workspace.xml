@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="31" column="146" lean-forward="false" selection-start-line="31" selection-start-column="146" selection-end-line="31" selection-end-column="146" />
+            <state relative-caret-position="405">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -30,6 +30,18 @@
             <state relative-caret-position="30">
               <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addjob.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/JS/addjob.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,18 +118,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/JS/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -150,6 +150,7 @@
         <option value="$PROJECT_DIR$/client/JS/home.js" />
         <option value="$PROJECT_DIR$/client/JS/navbar.js" />
         <option value="$PROJECT_DIR$/client/views/navbar.html" />
+        <option value="$PROJECT_DIR$/client/JS/addjob.js" />
       </list>
     </option>
   </component>
@@ -266,12 +267,12 @@
       <option name="presentableId" value="Default" />
       <updated>1500545211836</updated>
       <workItem from="1500545215543" duration="5716000" />
-      <workItem from="1500564892877" duration="13535000" />
+      <workItem from="1500564892877" duration="13966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19251000" />
+    <option name="totallyTimeSpent" value="19682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
@@ -466,6 +467,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/JS/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -474,11 +483,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/navbar.html">
+    <entry file="file://$PROJECT_DIR$/client/JS/addjob.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="146" lean-forward="false" selection-start-line="31" selection-start-column="146" selection-end-line="31" selection-end-column="146" />
-          <folding />
+        <state relative-caret-position="375">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
