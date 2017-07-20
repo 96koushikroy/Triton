@@ -56,3 +56,12 @@ Router.route('search-jobs', function () {
         path:'/search'
     }
 });
+
+Router.route('jobs-detail/:id', function() {
+    this.render('jobDetail', {
+        data: function() {
+            // H4Tx4EWFEeMBqavqt
+            return jobs.findOne({_id: this.params.id});
+        }
+    })
+})
