@@ -4,12 +4,9 @@ import { Mongo } from 'meteor/mongo';
 
 
 Router.route('/', function () {
-    this.render('home');
-});
-
-
-Router.route('/info/:id', function () {
-    this.render('info');
+    this.render('home'), {
+        name: 'post'
+    }
 });
 
 Router.route('login',function () {
@@ -22,6 +19,15 @@ Router.route('register',function(){
 
 Router.route('profile', function() {
     this.render('profile');
+})
+
+Router.route('profile/:id', function() {
+    this.render('profilePublic', {
+        data: function() {
+            // vN4BrDPMcFNFckBuC
+            return Meteor.users.findOne({_id: this.params.id});
+        }
+    });
 })
 
 Router.route('logout',function () {
