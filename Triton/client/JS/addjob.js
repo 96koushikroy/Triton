@@ -20,12 +20,19 @@ Template.addjob.events({
         deliveryarea = event.target.deliveryarea.value;
         wage = event.target.wage.value;
         jobdescription = event.target.jobdescription.value;
+        dateTime = event.target.datetime.value;
 
         var data = {
-            jobname:jobname,joblocation:joblocation,jobarea:jobarea,deliveryaddress:deliveryaddress,deliveryarea:deliveryarea,wage:wage,jobdescription:jobdescription,remaining:new Date(),createdAt:new Date()
+            jobname:jobname,joblocation:joblocation,jobarea:jobarea,deliveryaddress:deliveryaddress,deliveryarea:deliveryarea,wage:wage,jobdescription:jobdescription,remaining:new Date(dateTime),createdAt:new Date()
         };
+
         jobs.insert(data);
+
         sAlert.error('data added');
         Router.go('/');
     }
+});
+
+Template.addjob.onRendered(function() {
+    this.$('#datetimepicker1').datetimepicker();
 });

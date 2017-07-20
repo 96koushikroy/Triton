@@ -27,8 +27,15 @@ Template.register.events({
             email: email,
             password: password
         };
-        Accounts.createUser(final);
-        sAlert.success('Successfully registered!');
+
+        if(Meteor.users.findOne({email:email}).count() > 0){
+            sAlert.error('User Exists!');
+        }
+        else{
+            Accounts.createUser(final);
+            sAlert.success('Successfully registered!');
+        }
+
         Router.go('/');
     }
 });
