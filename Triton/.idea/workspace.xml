@@ -21,6 +21,7 @@
               <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
+                <marker date="1500594138000" expanded="true" signature="1194:1360" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -29,8 +30,8 @@
       <file leaf-file-name="jobDetail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/jobDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="315">
+              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -39,8 +40,8 @@
       <file leaf-file-name="addjob.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/JS/addjob.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="647">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -157,9 +158,9 @@
         <option value="$PROJECT_DIR$/client/JS/profile.js" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/client/views/addjob.html" />
-        <option value="$PROJECT_DIR$/client/JS/addjob.js" />
         <option value="$PROJECT_DIR$/client/JS/jobDetail.js" />
         <option value="$PROJECT_DIR$/client/JS/routes.js" />
+        <option value="$PROJECT_DIR$/client/JS/addjob.js" />
         <option value="$PROJECT_DIR$/client/views/jobDetail.html" />
       </list>
     </option>
@@ -287,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1500545211836</updated>
       <workItem from="1500545215543" duration="5716000" />
-      <workItem from="1500564892877" duration="20871000" />
+      <workItem from="1500564892877" duration="21078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26587000" />
+    <option name="totallyTimeSpent" value="26794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
@@ -550,14 +551,15 @@
           <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+            <marker date="1500594138000" expanded="true" signature="1194:1360" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/JS/addjob.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="647">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -566,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/jobDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="315">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>

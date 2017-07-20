@@ -8,14 +8,17 @@
         <p>Job Area: {{jobarea}}</p>
         <p>Delivery Area: {{deliveryarea}}</p>
         <p>Delivery Address: {{deliveryaddress}}</p>
+
         <p>Deliver Within: {{remaining}}</p>
         <p>Posted On: {{createdAt}}</p>
+        {{#if tags}}
+        <p>
+            Tags:
+            {{#each tags}}
+                <span><a href="#">{{.}}</a> | </span>
+            {{/each}}
+        </p>
+        {{/if}}
     </div>
-
-
-    <script>
-        // Set the date we're counting down to
-
-    </script>
 
 </template>

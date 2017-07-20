@@ -21,8 +21,21 @@ Template.addjob.events({
         wage = event.target.wage.value;
         jobdescription = event.target.jobdescription.value;
         dateTime = event.target.datetime.value;
+
+        tags = event.target.tags.value;
+
         var data = {
-            postedby:Meteor.userId(),workedby:"",jobname:jobname,joblocation:joblocation,jobarea:jobarea,deliveryaddress:deliveryaddress,deliveryarea:deliveryarea,wage:wage,jobdescription:jobdescription,remaining:dateTime,createdAt:new Date()
+            postedby:Meteor.userId(),
+            jobname:jobname,
+            joblocation:joblocation,
+            jobarea:jobarea,
+            deliveryaddress:deliveryaddress,
+            deliveryarea:deliveryarea,
+            wage:wage,
+            jobdescription:jobdescription,
+            remaining:new Date(dateTime),
+            createdAt:new Date(),
+            tags: tags.split(",").map(function(x){return x.trim()})
         };
         sAlert.success('data added');
 
