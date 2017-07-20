@@ -10,5 +10,13 @@
         <p>Delivery Address: {{deliveryaddress}}</p>
         <p>Remaining: {{remaining}}</p>
         <p>Created At: {{createdAt}}</p>
+        {{#if tags}}
+        <p>
+            Tags:
+            {{#each tags}}
+                <span><a href="#">{{.}}</a> | </span>
+            {{/each}}
+        </p>
+        {{/if}}
     </div>
 </template>

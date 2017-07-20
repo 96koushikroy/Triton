@@ -21,9 +21,19 @@ Template.addjob.events({
         wage = event.target.wage.value;
         jobdescription = event.target.jobdescription.value;
         dateTime = event.target.datetime.value;
+        tags = event.target.tags.value;
 
         var data = {
-            jobname:jobname,joblocation:joblocation,jobarea:jobarea,deliveryaddress:deliveryaddress,deliveryarea:deliveryarea,wage:wage,jobdescription:jobdescription,remaining:new Date(dateTime),createdAt:new Date()
+            jobname:jobname,
+            joblocation:joblocation,
+            jobarea:jobarea,
+            deliveryaddress:deliveryaddress,
+            deliveryarea:deliveryarea,
+            wage:wage,
+            jobdescription:jobdescription,
+            remaining:new Date(dateTime),
+            createdAt:new Date(),
+            tags: tags.split(",").map(function(x){return x.trim()})
         };
 
         jobs.insert(data);
