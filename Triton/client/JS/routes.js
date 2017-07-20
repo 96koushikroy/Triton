@@ -51,14 +51,10 @@ Router.route('add-job', function () {
     }
 });
 
-<<<<<<< HEAD
-Router.route('/findjob', function () {
-    this.render('findjob');
-});
-=======
+
 Router.route('search-jobs', function () {
     this.render('search'),{
         path:'/search'
     }
 });
->>>>>>> 9339d95aadf9b4fdfc1e7453f3d5867587837f0c
+

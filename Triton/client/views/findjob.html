@@ -1,4 +1,51 @@
-<template name="findjob">
+<template name="search">
+
+
+    <div class="container">
+        <form method = "get" class = "form-inline">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class="panel-heading">
+                        <div class="panel-title">Search Jobs Here</div>
+                        <div class="panel-body" >
+                            <div class="input-group">
+
+                                    <input name="q" class="form-control" type="text"  placeholder="Jobtype: Buy Ticket, Buy Food etc" >
+
+                                    <input name="loc" class="form-control" type="text"  placeholder="Location: Uttara, Baridhara">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2" >
+                    <b>Offered Wages</b> <br>
+                    Lowest:<input name="lowest" class="form-control" type="text" >
+                    Highest:<input name="highest" class="form-control" type="text">
+
+                </div>
+
+
+
+
+
+        </div>
+        <div class="row" style="padding-top:30px">
+            <div class="col-md-8"></div>
+            <div class="col-md-2">
+
+                <button type="submit" class="btn btn-primary"> <i class="fa fa-search"></i> Search</button>
+            </div>
+
+
+        </div>
+
+
+
+        </form>
+    </div>
 
 
 

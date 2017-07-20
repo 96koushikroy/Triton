@@ -50,6 +50,7 @@ iron:router@1.1.2
 iron:url@1.1.0
 jquery@1.11.10
 juliancwirko:s-alert@3.2.0
+kidovate:bootstrap-slider@0.0.5
 launch-screen@1.1.1
 less@2.7.9
 livedata@1.0.18
