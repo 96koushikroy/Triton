@@ -7,10 +7,6 @@ Router.route('/', function () {
     this.render('home');
 });
 
-Router.route('/info/:id', function () {
-    this.render('info');
-});
-
 Router.route('login',function () {
     this.render('login');
 });
@@ -21,6 +17,15 @@ Router.route('register',function(){
 
 Router.route('profile', function() {
     this.render('profile');
+})
+
+Router.route('profile/:id', function() {
+    this.render('profilePublic', {
+        data: function() {
+            // vN4BrDPMcFNFckBuC
+            return Meteor.users.findOne({_id: this.params.id});
+        }
+    });
 })
 
 Router.route('logout',function () {
