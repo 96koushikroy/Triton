@@ -70,7 +70,9 @@ Router.route('jobs-detail/:id', function() {
 });
 
 Router.route('my-jobs', function() {
-    this.render('jobs');
+    this.render('jobs'),{
+        path:'/my-jobs'
+    }
 });
 
 

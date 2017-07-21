@@ -2,54 +2,48 @@
 
 
     <div class="container">
-        <link rel="stylesheet" type="text/css" href="tagAdder.css">
-        <script src="/JS/tagAdder.js"></script>
 
 
-        <form method = "get" class = "form-inline">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-5">
-                    <div class="panel-heading">
-                        <div class="panel-title">Search Jobs Here</div>
-                        <div class="panel-body" >
-                            <div class="input-group">
+        <div class="row">
+            <div class="col-md-12 text-center">
 
-                                    <input name="q" class="form-control" type="text"  placeholder="Jobtype: Buy Ticket, Buy Food etc" >
+                <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-search"></i> </span>
+                    {{> EasySearch.Input  index=playersIndex attributes=inputAttributes }}
 
-                                    <input name="loc" class="form-control" type="text"  placeholder="Location: Uttara, Baridhara">
+                </div>
 
+                {{#EasySearch.IfInputEmpty index=playersIndex}}
+                    <h3>Start searching!</h3>
+                {{/EasySearch.IfInputEmpty}}
 
+                <br>
+
+                {{#EasySearch.Each index=playersIndex }}
+                    {{#if status}}
+                    {{else}}
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{jobname}}</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9" style="text-align: left;">
+                                        Job Area: {{jobarea}}<br />
+                                        Delivery Area: {{deliveryarea}}<br/>
+                                        Complete Work Within: {{remaining}}<br />
+                                        <a href="/my-profile/{{postedby}}" class="btn btn-warning"><i class="fa fa-user-circle-o"></i> View Job Poster</a>
+                                        <a href="/jobs-detail/{{_id}}" class="btn btn-warning"><i class="fa fa-book"></i> View Job Description</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-2" >
-                    <b>Offered Wages</b> <br>
-                    Lowest:<input name="lowest" class="form-control" type="text" >
-                    Highest:<input name="highest" class="form-control" type="text">
-
-                </div>
-
-
-
-
-
-        </div>
-        <div class="row" style="padding-top:30px">
-            <div class="col-md-8"></div>
-            <div class="col-md-2">
-
-                <button type="submit" class="btn btn-primary"> <i class="fa fa-search"></i> Search</button>
+                        {{/if}}
+                {{/EasySearch.Each}}
             </div>
-
-
         </div>
-
-
-
-        </form>
     </div>
 
 
