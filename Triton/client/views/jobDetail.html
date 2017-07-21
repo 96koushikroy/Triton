@@ -21,7 +21,11 @@
         {{/if}}
 
         {{#if currentUser}}
-            <a class="btn btn-success" href="{{pathFor 'login'}}"><i class="fa fa-book"></i> Claim</a>
+            {{#if checkemployee}}
+                <a class="btn btn-success claim" href=""><i class="fa fa-book"></i> Claim</a>
+            {{else}}
+                <h3>Sorry, Someone is already working on this Job!!</h3>
+            {{/if}}
         {{else}}
             <a class="btn btn-default" href="{{pathFor 'login'}}"><i class="fa fa-sign-in"></i> Login</a>
         {{/if}}
