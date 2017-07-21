@@ -1,0 +1,36 @@
+<template name="jobs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+                <h2>Posted Jobs</h2>
+                {{#if postedJobs}}
+                <ul>
+                    {{#each postedJobs}}
+                        <li><a href="#"></a>{{jobname}}</li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </div>
+            <div class="col-md-6 col-md-offset-2">
+                <h2>Current Jobs</h2>
+                {{#if currentJobs}}
+                <ul>
+                    {{#each currentJobs}}
+                        <li><a href="#"></a>{{jobname}}</li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </div>
+            <div class="col-md-6 col-md-offset-2">
+                <h2>Done Jobs</h2>
+                {{#if doneJobs}}
+                <ul>
+                    {{#each doneJobs}}
+                        <li><a href="#"></a>{{jobname}}</li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

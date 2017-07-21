@@ -68,3 +68,7 @@ Router.route('jobs-detail/:id', function() {
         }
     })
 });
+
+Router.route('my-jobs/:id', function() {
+    this.render('jobs')
+})
