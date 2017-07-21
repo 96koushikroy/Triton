@@ -4,7 +4,7 @@ import { Mongo } from 'meteor/mongo';
 
 Template.jobs.helpers({
     'doneJobs': function() {
-        return jobs.find({employee: Meteor.userId()});
+        return jobs.find({employee: Meteor.userId(),status: 1});
     },
 
     'postedJobs': function() {

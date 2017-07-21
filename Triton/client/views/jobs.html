@@ -6,7 +6,13 @@
                 {{#if postedJobs}}
                 <ul>
                     {{#each postedJobs}}
-                        <li><a href="#"></a>{{jobname}}</li>
+                        <li><a href="#"></a>{{jobname}} --
+                            {{#if status}}
+                            Finished
+                            {{else}}
+                            Unfinished
+                            {{/if}}
+                        </li>
                     {{/each}}
                 </ul>
                 {{/if}}
@@ -16,7 +22,13 @@
                 {{#if currentJobs}}
                 <ul>
                     {{#each currentJobs}}
-                        <li><a href="#"></a>{{jobname}}</li>
+                    <li><a href="#"></a>{{jobname}} --
+                        {{#if status}}
+                        Finished
+                        {{else}}
+                        Unfinished
+                        {{/if}}
+                    </li>
                     {{/each}}
                 </ul>
                 {{/if}}
@@ -26,7 +38,13 @@
                 {{#if doneJobs}}
                 <ul>
                     {{#each doneJobs}}
-                        <li><a href="#"></a>{{jobname}}</li>
+                    <li><a href="#"></a>{{jobname}} --
+                        {{#if status}}
+                        Finished
+                        {{else}}
+                        Unfinished
+                        {{/if}}
+                    </li>
                     {{/each}}
                 </ul>
                 {{/if}}
