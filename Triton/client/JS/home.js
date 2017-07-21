@@ -4,6 +4,6 @@ Template.home.helpers({
         return Meteor.users.findOne();
     },
     'latestJobs':function () {
-        return jobs.find({remaining: {$gte: new Date()}}, {sort: {createdAt: -1},limit:20});
+        return jobs.find({employee:"",status:0,remaining: {$gte: new Date()}}, {sort: {createdAt: -1},limit:20});
     }
 });
