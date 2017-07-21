@@ -6,7 +6,7 @@ const PlayersIndex = new Index({
     collection: jobs,
     fields: ['jobname','joblocation'],
     engine: new MinimongoEngine(),
-})
+});
 
 Template.search.helpers({
     playersIndex: () => PlayersIndex
