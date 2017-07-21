@@ -67,3 +67,9 @@ Router.route('jobs-detail/:id', function() {
         }
     })
 });
+
+Router.route('tag-add', function () {
+    this.render('tag'),{
+        path:'/tag'
+    }
+});

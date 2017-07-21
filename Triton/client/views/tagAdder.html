@@ -1,0 +1,30 @@
+<template name="tag">
+    <div class="container">
+
+        <link rel="stylesheet" type="text/css" href="tagAdder.css">
+        <script src="/JS/tagAdder.js"></script>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="rolename">Role Name</label>
+            <div class="col-md-4">
+                <select id="dates-field2" class="multiselect-ui form-control" multiple="multiple">
+                    <option value="cheese">Cheese</option>
+                    <option value="tomatoes">Tomatoes</option>
+                    <option value="mozarella">Mozzarella</option>
+                    <option value="mushrooms">Mushrooms</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="onions">Onions</option>
+                </select>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $(function() {
+                $('.multiselect-ui').multiselect({
+                    includeSelectAllOption: true
+                });
+            });
+        </script>
+    </div>
+</template>
