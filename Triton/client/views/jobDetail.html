@@ -19,6 +19,13 @@
             {{/each}}
         </p>
         {{/if}}
+
+        {{#if currentUser}}
+            <a class="btn btn-success" href="{{pathFor 'login'}}"><i class="fa fa-book"></i> Claim</a>
+        {{else}}
+            <a class="btn btn-default" href="{{pathFor 'login'}}"><i class="fa fa-sign-in"></i> Login</a>
+        {{/if}}
+
     </div>
 
 </template>
