@@ -39,7 +39,7 @@ Router.route('my-profile/:id', function() {
 Router.route('logo',function () {
     Meteor.logout(function() {
         sAlert.error('User successfully logged out!');
-        Router.go('/');
+        Router.go('home');
     });
     this.render('home'),{
         path:'/logout'
@@ -63,6 +63,7 @@ Router.route('jobs-detail/:id', function() {
     this.render('jobDetail', {
         data: function() {
             // H4Tx4EWFEeMBqavqt
+            Session.set('curJob',this.params.id);
             return jobs.findOne({_id: this.params.id});
         }
     })
