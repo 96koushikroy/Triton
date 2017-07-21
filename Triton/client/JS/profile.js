@@ -37,6 +37,7 @@ Template.profile.events({
                 Meteor.call('updateUserInfo',data,id, function (err) {
                     if(!err){
                         console.log("Profile ammended successfully");
+                        sAlert.info("Profile ammended successfully");
                     }
                 });
 
@@ -82,17 +83,18 @@ Template.profile.events({
         // You will want to validate your passwords better than this
         if (newPassword !== newPasswordRepeated) {
             console.log('Entered Password Did not match!');
-            // sAlert.error('Entered Password Did not match!');
+            sAlert.error('Entered Password Did not match!');
             return false;
         }
 
         Accounts.changePassword(currentPassword, newPassword,function (err) {
             if(err) {
                 console.log("Error");
-                // sAlert.error(err.reason);
+                sAlert.error(err.reason);
             }
             else{
                 console.log('Password Change Successfully');
+                sAlert.info('Password Change Successfully');
                 event.target.npr.value='';
                 event.target.np.value='';
                 event.target.cp.value='';
