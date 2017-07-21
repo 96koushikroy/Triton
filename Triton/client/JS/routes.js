@@ -39,6 +39,7 @@ Router.route('my-profile/:id', function() {
 Router.route('logo',function () {
     Meteor.logout(function() {
         sAlert.error('User successfully logged out!');
+        Router.go('/');
     });
     this.render('home'),{
         path:'/logout'

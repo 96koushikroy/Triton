@@ -26,6 +26,7 @@ Template.addjob.events({
 
         var data = {
             postedby:Meteor.userId(),
+            employee:"",
             jobname:jobname,
             joblocation:joblocation,
             jobarea:jobarea,

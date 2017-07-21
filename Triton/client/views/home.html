@@ -9,5 +9,33 @@
 </body>
 
 <template name="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3> Latest Jobs </h3>
+                {{#each latestJobs}}
 
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{jobname}}</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9" style="text-align: left;">
+                                        Job Area: {{jobarea}}<br />
+                                        Delivery Area: {{deliveryarea}}<br/>
+                                        Complete Work Within: {{remaining}}<br />
+                                        <a href="/my-profile/{{postedby}}" class="btn btn-warning"><i class="fa fa-user-circle-o"></i> View Job Poster</a>
+                                        <a href="/jobs-detail/{{_id}}" class="btn btn-warning"><i class="fa fa-book"></i> View Job Description</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
 </template>
