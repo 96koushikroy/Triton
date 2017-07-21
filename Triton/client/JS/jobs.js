@@ -4,18 +4,11 @@ import { Mongo } from 'meteor/mongo';
 
 Template.jobs.helpers({
     'doneJobs': function() {
-        return jobs.find({employee: Meteor.userId()});
+        return jobs.find({employee: Meteor.userId()}, {sort: {createdAt: -1}});
     },
 
     'postedJobs': function() {
-        return jobs.find({postedby: Meteor.userId()});
-    },
-
-    'currentJobs': function() {
-        return jobs.find({_id: Meteor.userId()});
+        return jobs.find({postedby: Meteor.userId()}, {sort: {createdAt: -1}});
     }
 });
 
-// 'currentJobs': jobs.find({_id: this.params.id}),
-// 'postedJobs': jobs.find({postedby: this.params.id}),
-// 'doneJobs': jobs.find({employee: this.params.id})

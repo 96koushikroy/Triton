@@ -69,6 +69,14 @@ Router.route('jobs-detail/:id', function() {
     })
 });
 
-Router.route('my-jobs/:id', function() {
-    this.render('jobs')
+Router.route('my-jobs', function() {
+    this.render('jobs');
+});
+
+
+Router.route('complete/:id', function() {
+    sAlert.success('Job Market As Completed!');
+    jobs.update(this.params.id,{ $set: { status: 1 } })
 })
+
+

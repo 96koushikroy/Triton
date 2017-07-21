@@ -5,7 +5,6 @@ import { Mongo } from 'meteor/mongo';
 Template.jobDetail.helpers({
     'checkemployee':function () {
         var data = jobs.findOne({_id:Session.get('curJob')});
-        console.log(data);
         if(data.employee == "")return 1;
         else return 0;
     }

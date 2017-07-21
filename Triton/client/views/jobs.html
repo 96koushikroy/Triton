@@ -4,31 +4,69 @@
             <div class="col-md-6 col-md-offset-2">
                 <h2>Posted Jobs</h2>
                 {{#if postedJobs}}
-                <ul>
-                    {{#each postedJobs}}
-                        <li><a href="#"></a>{{jobname}}</li>
-                    {{/each}}
-                </ul>
+
+                    {{#if postedJobs}}
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Job Name</th>
+                                <th>Author</th>
+                                <th>Deadline</th>
+                                <th>Job Details</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            {{#each postedJobs}}
+                                <tr>
+                                    <td>{{jobname}}</td>
+                                    <td><a href="http://localhost:3000/my-profile/{{postedby}}">Posted By</a></td>
+                                    <td>{{remaining}}</td>
+                                    <td><a href="http://localhost:3000/jobs-detail/{{_id}}" class="btn btn-warning"><i class="fa fa-book"></i> View Job Description</a></td>
+                                    <td>
+                                        {{#if status}}
+                                            Completed!
+                                        {{else}}
+                                            Not Completed!
+                                        {{/if}}
+
+                                    </td>
+                                </tr>
+                            {{/each}}
+                        </table>
+                    {{/if}}
                 {{/if}}
             </div>
-            <div class="col-md-6 col-md-offset-2">
-                <h2>Current Jobs</h2>
-                {{#if currentJobs}}
-                <ul>
-                    {{#each currentJobs}}
-                        <li><a href="#"></a>{{jobname}}</li>
-                    {{/each}}
-                </ul>
-                {{/if}}
-            </div>
+            <br/>
             <div class="col-md-6 col-md-offset-2">
                 <h2>Done Jobs</h2>
                 {{#if doneJobs}}
-                <ul>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Job Name</th>
+                        <th>Author</th>
+                        <th>Deadline</th>
+                        <th>Job Details</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
                     {{#each doneJobs}}
-                        <li><a href="#"></a>{{jobname}}</li>
+                        <tr>
+                            <td>{{jobname}}</td>
+                            <td><a href="http://localhost:3000/my-profile/{{postedby}}">Posted By</a></td>
+                            <td>{{remaining}}</td>
+                            <td><a href="http://localhost:3000/jobs-detail/{{_id}}" class="btn btn-warning"><i class="fa fa-book"></i> View Job Description</a></td>
+                            <td>
+                                {{#if status}}
+                                    Completed!
+                                {{else}}
+                                    <a href="http://localhost:3000/complete/{{_id}}" class="btn btn-danger">Mark Complete</a>
+                                {{/if}}
+
+                            </td>
+                        </tr>
                     {{/each}}
-                </ul>
+                </table>
                 {{/if}}
             </div>
         </div>
