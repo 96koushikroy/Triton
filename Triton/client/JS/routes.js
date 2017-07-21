@@ -87,6 +87,3 @@ Router.route('tag-add', function () {
         path:'/tag'
     }
 });
-Router.route('my-jobs', function() {
-    this.render('jobs')
-})

@@ -17,7 +17,7 @@
                             {{#each postedJobs}}
                                 <tr>
                                     <td>{{jobname}}</td>
-                                    <td>{{#if employee}}<a href="http://localhost:3000/my-profile/{{employee}}"></a>{{else}}No Employee{{/if}}</td>
+                                    <td>{{#if employee}}<a href="http://localhost:3000/my-profile/{{employee}}">Profile</a>{{else}}No Employee{{/if}}</td>
                                     <td>{{remaining}}</td>
                                     <td><a href="http://localhost:3000/jobs-detail/{{_id}}" class="btn btn-warning"><i class="fa fa-book"></i> View Job Description</a></td>
                                     <td>
@@ -37,17 +37,34 @@
             <div class="col-md-6 col-md-offset-2">
                 <h2>Current Jobs</h2>
                 {{#if currentJobs}}
-                <ul>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Job Name</th>
+                        <th>Author</th>
+                        <th>Deadline</th>
+                        <th>Job Details</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
                     {{#each currentJobs}}
-                    <li><a href="#"></a>{{jobname}} --
-                        {{#if status}}
-                        Finished
-                        {{else}}
-                        Unfinished
-                        {{/if}}
-                    </li>
+                        <tr>
+                            <td>{{jobname}}</td>
+                            <td><a href="http://localhost:3000/my-profile/{{postedby}}">Profile</a></td>
+                            <td>{{remaining}}</td>
+                            <td><a href="http://localhost:3000/jobs-detail/{{_id}}" class="btn btn-warning"><i class="fa fa-book"></i> View Job Description</a></td>
+                            <td>
+                                {{#if status}}
+                                    Completed!
+                                {{else}}
+                                    <a href="http://localhost:3000/complete/{{_id}}" class="btn btn-danger">Mark Complete</a>
+                                {{/if}}
+
+                            </td>
+                        </tr>
+
                     {{/each}}
-                </ul>
+                </table>
                 {{/if}}
             </div>
             <br/>
@@ -67,7 +84,7 @@
                     {{#each doneJobs}}
                         <tr>
                             <td>{{jobname}}</td>
-                            <td><a href="http://localhost:3000/my-profile/{{postedby}}">Posted By</a></td>
+                            <td><a href="http://localhost:3000/my-profile/{{postedby}}">Profile</a></td>
                             <td>{{remaining}}</td>
                             <td><a href="http://localhost:3000/jobs-detail/{{_id}}" class="btn btn-warning"><i class="fa fa-book"></i> View Job Description</a></td>
                             <td>

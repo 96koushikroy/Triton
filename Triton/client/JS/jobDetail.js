@@ -12,7 +12,7 @@ Template.jobDetail.helpers({
 
 Template.jobDetail.events({
     'click .claim':function () {
-        var r = confirm("Are you sure to cliam this Job!");
+        var r = confirm("Are you sure to claim this Job?");
         if (r == true) {
             //update employee on job collection
             jobs.update(Session.get('curJob'), { $set: { employee: Meteor.userId() } });
@@ -20,7 +20,7 @@ Template.jobDetail.events({
             sAlert.success("You Have Successfully taken the Job!");
 
             //Redirect to current jobs
-
+            Router.go('/my-jobs')
         } else {
 
         }

@@ -4,7 +4,7 @@ import { Mongo } from 'meteor/mongo';
 import { Index, MinimongoEngine } from 'meteor/easy:search';
 const PlayersIndex = new Index({
     collection: jobs,
-    fields: ['jobname','joblocation'],
+    fields: ['jobname','joblocation', 'deliveryarea'],
     engine: new MinimongoEngine(),
 })
 
