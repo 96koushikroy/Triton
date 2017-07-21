@@ -80,3 +80,11 @@ Router.route('complete/:id', function() {
 })
 
 
+Router.route('tag-add', function () {
+    this.render('tag'),{
+        path:'/tag'
+    }
+});
+Router.route('my-jobs', function() {
+    this.render('jobs')
+})

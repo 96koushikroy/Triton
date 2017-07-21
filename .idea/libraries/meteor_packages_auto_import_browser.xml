@@ -2,6 +2,9 @@
   <library name="meteor-packages-auto-import-browser" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.8.4/web.browser/packages/momentjs:moment.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/tsega_bootstrap3-datetimepicker/4.17.37_1/web.browser/lib/css/bootstrap-datetimepicker.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/tsega_bootstrap3-datetimepicker/4.17.37_1/web.browser/lib/js/bootstrap-datetimepicker.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-base/1.3.1/web.browser/client_main.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-base/1.3.1/web.browser/server_tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-base/1.3.1/web.browser/server_main.js" />
@@ -45,8 +48,6 @@
         <item url="file://$USER_HOME$/.meteor/packages/webapp/1.3.17/web.browser/webapp_client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/webapp/1.3.17/web.browser/webapp_cordova.js" />
         <item url="file://$USER_HOME$/.meteor/packages/webapp/1.3.17/web.browser/webapp_server.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/maxharris9_meteor-bootstrap-slider/0.9.0/web.browser/packages/maxharris9:meteor-bootstrap-slider.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/maxharris9_meteor-bootstrap-slider/0.9.0/web.browser/packages/maxharris9:meteor-bootstrap-slider/slider/css/slider.css" />
         <item url="file://$USER_HOME$/.meteor/packages/gfk_notifications/1.1.4/web.browser/notifications.js" />
         <item url="file://$USER_HOME$/.meteor/packages/id-map/1.0.9/web.browser/id-map.js" />
         <item url="file://$USER_HOME$/.meteor/packages/gfk_notifications/1.1.4/web.browser/notification.js" />
@@ -220,12 +221,13 @@
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.8.0/web.browser/options.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.8.0/web.browser/client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.8.0/web.browser/.npm/package/node_modules/install/install.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/kidovate_bootstrap-slider/0.0.5/web.browser/packages/kidovate:bootstrap-slider.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/kidovate_bootstrap-slider/0.0.5/web.browser/packages/kidovate:bootstrap-slider/slider/css/slider.css" />
         <item url="file://$USER_HOME$/.meteor/packages/mongo-id/1.0.6/web.browser/id.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.8.4/web.browser/packages/momentjs:moment.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/tsega_bootstrap3-datetimepicker/4.17.37_1/web.browser/lib/css/bootstrap-datetimepicker.css" />
+      <root url="file://$USER_HOME$/.meteor/packages/tsega_bootstrap3-datetimepicker/4.17.37_1/web.browser/lib/js/bootstrap-datetimepicker.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-base/1.3.1/web.browser/client_main.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-base/1.3.1/web.browser/server_tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-base/1.3.1/web.browser/server_main.js" />
@@ -269,8 +271,6 @@
       <root url="file://$USER_HOME$/.meteor/packages/webapp/1.3.17/web.browser/webapp_client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/webapp/1.3.17/web.browser/webapp_cordova.js" />
       <root url="file://$USER_HOME$/.meteor/packages/webapp/1.3.17/web.browser/webapp_server.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/maxharris9_meteor-bootstrap-slider/0.9.0/web.browser/packages/maxharris9:meteor-bootstrap-slider.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/maxharris9_meteor-bootstrap-slider/0.9.0/web.browser/packages/maxharris9:meteor-bootstrap-slider/slider/css/slider.css" />
       <root url="file://$USER_HOME$/.meteor/packages/gfk_notifications/1.1.4/web.browser/notifications.js" />
       <root url="file://$USER_HOME$/.meteor/packages/id-map/1.0.9/web.browser/id-map.js" />
       <root url="file://$USER_HOME$/.meteor/packages/gfk_notifications/1.1.4/web.browser/notification.js" />
@@ -444,8 +444,6 @@
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.8.0/web.browser/options.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.8.0/web.browser/client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.8.0/web.browser/.npm/package/node_modules/install/install.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/kidovate_bootstrap-slider/0.0.5/web.browser/packages/kidovate:bootstrap-slider.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/kidovate_bootstrap-slider/0.0.5/web.browser/packages/kidovate:bootstrap-slider/slider/css/slider.css" />
       <root url="file://$USER_HOME$/.meteor/packages/mongo-id/1.0.6/web.browser/id.js" />
     </CLASSES>
     <SOURCES />

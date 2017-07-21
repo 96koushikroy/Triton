@@ -3,8 +3,6 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-2">
                 <h2>Posted Jobs</h2>
-                {{#if postedJobs}}
-
                     {{#if postedJobs}}
                         <table class="table">
                             <thead>
@@ -34,6 +32,22 @@
                             {{/each}}
                         </table>
                     {{/if}}
+
+            </div>
+            <div class="col-md-6 col-md-offset-2">
+                <h2>Current Jobs</h2>
+                {{#if currentJobs}}
+                <ul>
+                    {{#each currentJobs}}
+                    <li><a href="#"></a>{{jobname}} --
+                        {{#if status}}
+                        Finished
+                        {{else}}
+                        Unfinished
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </ul>
                 {{/if}}
             </div>
             <br/>
@@ -65,6 +79,7 @@
 
                             </td>
                         </tr>
+
                     {{/each}}
                 </table>
                 {{/if}}
